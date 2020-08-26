@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web  Application Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="jquery.css">
+    <script src="angular.js"></script>
+    <script src="ajaxjson.js"></script> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="jQueryCodeExample.js"></script>
+
+</head>
+<body>
+<header id="top">
+    <div>
+        <img class="img_logo" src="images/logo.png">
+        <h2>Mobile Application Development</h2>
+    </div>  
+</header>
+<nav class="row">
+    <section class="col col_1">
+        <aside class="navbar nav">
+            <a class="active" href="index.html">Home</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="jquery.html">JQuery</a>
+            <a href="#">Ajax</a>
+            <a href="#">Contact</a>
+        </aside>
+    </section>
+</nav>
+<br/>
+<main>
+    <div>
+    <img class="main_img" height="161px" width="90px" src="images/ajax_logo.png">
+    </div>
+    
+<div class="quicklinks">
+      <ul>
+        <li><div><a href="#introduction">Introduction</a></div></li>
+        <li><div><a href="#advantages">Advantages</a></div></li>
+        <li><div><a href="#disadvantages">Disadvantages</a></div></li>
+        <li><div><a href="#usages">Usages</a></div></li>
+        <li><div><a href="#code">Code Examples</a></div></li>
+      </ul>
+    </div>
+
+<section class="content">
+    <h2 id="introduction">Introduction</h2>
+    <p>AJAX stands for Asynchronous JavaScript and XML, it is a web development technique for creating asynchronou web applications. AJAX allows web pages to be updated asynchronously by exchanging information with a web server without interfering with the display and the behavior of the current page. That means it updates the part of a web page, without refreshing the entire page. </p>
+
+    <p>JSON stands for JavaScript Object Notation. It is a syntax for storing and exchanging data. As the JSON format is text only, it can be sent easily to and from a server. Any data which is updated using AJAX can be stored using the JSON format on web server. We can convert any JSON received from the server into JavaScript objects.</p> 
+    
+
+    <h2 id="advantages">Advantages of AJAX and JSON</h2>
+    <div style="margin-left: 10px">
+        <ul>
+        <li>
+            <b>AJAX reduces bandwidth usage and increases speed:</b> With the help of AJAX, we can eliminate network load and bandwidth usage and retrieve only the information that is required to provide you quicker interfaces and better response time. That means there is no requirement of reloading the page again and again. The response time is faster so that can increase speed and performance.</li>
+        <li>
+            <b>AJAX has high Compatibility:</b> AJAX can be compatible with PHP, ASP.NET, J2EE, or any other languages. It supports almost all popular browsers.</li>
+        <li>
+            <b>AJAX has improved User Experience:</b>The advanced user experience provided by AJAX is by far the most beneficial. It allows webpages to update sequentially by trading a limited amount of information with the server. And because of this, it is possible to update any part of a webpage, without reloading the entire page. Ajax increases the browser's performance and thereby providing a better responsive User Experience.</li>
+        <li>
+            <b>JSON is language independent:</b> JSON syntax is exceptionally simple to utilize and can be used for transferring data in applications using any programming language.</li>
+        <li>
+            <b>JSON is server parsing:</b> For the developers, it is important that on the server-side parsing will be fast so that the users can get a quick response of their response so in this situation JSON server-side parsing is a solid point that demonstrates us to utilize the JSON on the server-side.</li>
+        <li>
+            <b>JSON for sharing data:</b> JSON is the best tool for sharing data of any size including audio, video, etc. That is why JSON stores the data in the arrays which makes data transfer easier and also it is preferable to file format for web APIs and for web development.
+            </li>
+    </ul>
+    </div>
+    
+
+    <h2 id="disadvantages">Disadvantages of AJAX and JSON</h2>
+     <div style="margin-left: 10px;">
+    <ul>
+        <li>
+            <b>AJAX is Time Consuming: </b> AJAX can be consume more time in designing and developing.</li>
+        <li>
+            <b>Security is low in AJAX:</b>Security is less as all files are downloaded at client side in AJAX application. Browsers, which do not support javascript, cannot be used in AJAX application.</li>
+        <li>
+            <b>Exception Handling in JSON:</b> JSON has no exception handling during the JSON calls.</li>
+        <li>
+            <b>Vulnerable:</b> JSON response wrapped in a function call is returned when a JSON service returns. Thus, the Web Application can be vulnerable, used on any untrusted browsers or services and can lead to various types of attacks on the application.</li>
+        <li>
+            <b>JSON has limited data types:</b> As everything is string in JSON, so it might be confusing to know data directly from the JSON file. </li>
+    </ul>
+    </div>
+
+    <h2 id="usages">Usages</h2>
+    <div style="margin-left: 10px;">
+    <ul>
+        <li>AJAX is useful to directly go to the login instead of typing user id and password.</li>
+
+        <li>With help of AJAX we can simply creat XML http request and retrieve data from txt file.</li>
+
+        <li>JSON is often used to work with AJAX and it works well together to achieve asynchronous loading of stored data.</li>
+
+        <li>JSON can be used in forming API's, it can also be used to request data from a different domain by the help of a method called JSONP.</li>
+    </ul>
+    </div>
+
+    <h2 id="code">Code Examples</h2>
+    <div>
+        <div class="codeExample1">
+            <b>AJAX Structure</b><br/>
+				  	<p>Ajax and JSON Syntax
+						Ajax has a structure which is very important to include in a js file, usually AJAX provides several methods for accessing remote files using either "GET" or "POST". It can fetch JSON files by defining the url tag where in url you can load the address and also including the file's dataType. It includes success to run function successfully and error if there is any functional error.
+					</p>
+				  </div>
+				  <div class="col-md-6">
+				  	<pre>
+	$.ajax({
+            type: "POST",                 //GET or POST
+            url: "example.json",         //Address to load 
+            dataType: "json",           //html,xml,json,text
+            success: parseJSON,        //function if successful
+            error: function (e) {}    //if error occurs 
+	});
+
+	</pre>
+        </div>
+    </div>
+
+ <h3>Program 1: <small>Displaying Real Time Data</small></h3>
+     <div class="flex-container">
+        <div class="column">
+            <img src="images/ajaxexample1.PNG" height="500px" width="350px">
+            <p>Json Code</p>
+            <img src="images/jsonexample.PNG" height="500px">
+        </div>
+
+        <div class="column"> 
+            <div>
+                <img src="images/ajaxoutput1.png" height="400px">
+            </div>
+            <button id="Explanation2" class="explainBtn">Show Explanation</button>
+            <div id="CodeExplanation2" class="programExplanation">
+                        This program displays the data records of Covid-19 of various countries where we can fetch the data of world as well as country wise. Here JSON file is created where
+                        all the data is stored in it and with the help of AJAX the data is fetched and displayed on html web page. Also real time data can be displayed where customer won't need to refresh the data as it automatically gets update when there is a change made in backend.
+                    </div>  
+        </div> 
+    </div>
+
+
+    <h3>Program 2:<small>Entering Specific value to display data</small></h3>
+    <div class="flex-container">
+        <div class="column">
+            <img class="responsive" src="images/ajaxexample2.PNG" height="500px" width="350px">
+            <p>Json Code</p>
+            <img src="images/jsonexample.PNG" height="500px">
+        </div>
+
+        <div class="column"> 
+            <div id="example1Container">
+              <img src="images/ajaxoutput2.png">
+            </div>
+                <button id="Explanation1" class="explainBtn">Show Explanation</button>
+            <div id="CodeExplanation1" class="programExplanation">
+                        This code example uses the search filter to display the data as per the search done in the box. Here in this code the data is displayed of the countries where the cases are more or equivalent to 100000. Here, conditions are kept where data is displayed if the condition meets and if wromg value entered it would display error message. Same here also data is fetched from JSON file to AJAX.
+                    </div>  
+        </div> 
+    </div>
+                   <div>
+                        <a href="#top">Back to Top</a>
+                    </div>
+
+</section>
+</main>
+<footer>
+        <p>&copy;2020 Designed By Mihir and Dharam</p>
+</footer>   
+</body>
+</html>
