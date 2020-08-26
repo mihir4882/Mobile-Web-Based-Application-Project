@@ -1,0 +1,96 @@
+body{
+  margin-bottom: 1000px;
+}
+
+div{
+  display:flex;
+  flex-direction: row;
+}
+
+.main_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:22%;
+}
+
+#top{
+  margin-top: 10px;
+}
+
+p{
+  text-align: justify;
+}
+
+.navbar {
+  overflow:auto;
+  background-color: #f1f1f1;
+  height: 548vh;
+  margin-right: 20px;
+}
+
+.quicklinks{
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.quicklinks ul{
+  list-style-type: none;
+	padding-left: : 0px;
+}
+
+.quicklinks div{
+      display: inline-block;
+      width: 183px;
+      margin: 0px 20px;
+      border: 2px solid gray;
+      transition: all .5s ease;
+}
+
+.quicklinks li{
+  list-style: none;
+    display: inline-block;
+    margin:10px 0px;
+}
+
+.quicklinks li a {
+    text-decoration: none;
+    padding: 3px 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.quicklinks div:hover{
+	background: #f0d92b;
+	margin: 0px 10px;
+	color: white;
+}
+
+.contentSection{
+  margin-bottom: 100px;
+}
+
+.content{
+  margin-right:20px;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.codeExample1{
+  width:35%;
+  display: inline-block;
+}
+
+.codeExample2{
+  width:60%;
+  display: inline-block;
+  float: right;
+}
+
+.codeImage{
+  margin: 30px 80px 0px 30px;
+}
+
+footer p{
+  text-align: center;
+}

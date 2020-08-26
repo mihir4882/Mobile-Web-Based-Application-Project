@@ -1,0 +1,42 @@
+{
+	"wc": 8053765,
+	"wd": 36996,
+	"wr": 4164589,
+	"countries": [{
+			"name": "USA",
+			"tc": 2170722,
+			"td": 117959,
+			"tr": 873753,
+			"zones": ["RED", "ORANGE", "YELLOW"]
+		},
+		{
+			"name": "BRAZIL",
+			"tc": 873963,
+			"td": 43485,
+			"tr": 453568,
+			"zones": ["RED", "ORANGE", "YELLOW", "GREEN"]
+		},
+		{
+			"name": "RUSSIA",
+			"tc": 537210,
+			"td": 7091,
+			"tr": 284539,
+			"zones": ["RED", "ORANGE", "GREEN"]
+		},
+		{
+			"name": "INDIA",
+			"tc": 342291,
+			"td": 9884,
+			"tr": 8179321,
+			"zones": ["RED", "ORANGE", "YELLOW", "GREEN"]
+		},
+		{
+			"name": "CANADA",
+			"tc": 99070,
+			"td": 8174,
+			"tr": 60524,
+			"zones": ["ORANGE", "YELLOW", "GREEN"]
+		}
+
+	]
+}
