@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Application Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="jquery.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    <script type="text/javascript" src="jQueryCodeExample.js"></script>
+
+</head>
+<body>
+<header id="top">
+    <div>
+        <img class="img_logo" src="images/logo.png">
+        <h2>Mobile Application Development</h2>
+    </div>  
+</header>
+
+<nav class="row">
+    <section class="col col_1">
+        <aside class="navbar nav">
+            <a class="active" href="index.html">Home</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="jquery.html">JQuery</a>
+            <a href="ajaxjson.html">Ajax</a>
+            <a href="#">Contact</a>
+        </aside>
+    </section>
+</nav>
+<br/>
+<main>
+    <div>
+    <img class="main_img" height="161px" width="90px" src="images/jquery_logo.png">
+    </div>
+    
+<div class="quicklinks">
+      <ul>
+        <li><div><a href="#introduction">Introduction</a></div></li>
+        <li><div><a href="#advantages">Advantages</a></div></li>
+        <li><div><a href="#disadvantages">Disadvantages</a></div></li>
+        <li><div><a href="#usages">Usages</a></div></li>
+        <li><div><a href="#code">Code Examples</a></div></li>
+      </ul>
+    </div>
+
+<section class="content">
+    <h2 id="introduction">Introduction</h2>
+    <p>jQuery is a quick, small and rich quality JavaScript library. jQuery helps to make things easier for event handling, HTML document traversal and manipulation, animation and Ajax, a lot smooth with effortless API that works beyond a multitude of browsers. JQuery has switched the way of writing JavaScript with the combination of adaptability and extensibility.</p> 
+    
+
+    <h2 id="advantages">Advantages</h2>
+    <div style="margin-left: 10px">
+        <ul>
+        <li>
+            <b>Time Saving:</b> Five lines of jQuery are identical to 25 lines of ordinary JavaScript code. This implies loading web pages quicker and storing files in small sizes.</li>
+        <li>
+            <b>Huge Community:</b> There is a huge community help network on the web to help you rapidly cure any bug issues. There are tons of plug-ins to help you abundantly.</li>
+        <li>
+            <b>Search Engine Optimization:</b> While search engines are showing signs of improvement at having the option to read the content within some Flash, the text is already set up inside the jQuery. This aids that it is totally clear to all the search engines, uncovering all your keyword-rich content.</li>
+        <li>
+            <b>Plugin Support:</b> There are plenty of plug-ins on the web that can create basic and quick extraordinary effects for the web developers.</li>
+        <li>
+            <b>Browser and Mobile Friendly:</b> jQuery is one of the most popular JavaScript libraries and mostly works in all browsers. Even it is highly supported by any mobile device where the web browser is compatible with JavaScript.</li>
+        <li>
+            <b>Open Source:</b> Basically it is an open-source software free of cost. That means it can be modified and can be managed according to the demands of the developer.</li>
+    </ul>
+    </div>
+    
+
+    <h2 id="disadvantages">Disadvantages</h2>
+     <div style="margin-left: 10px;">
+    <ul>
+        <li>
+            <b>Increased technology stack: </b> At the point when you add a structure or toolbox to any project, you should always pause and think in the event that it is worth it or not. You will include dependency and prospect developers who would need to look after it. jQuery will be around for quite a while, however until the end of time? I don't think so.</li>
+        <li>
+            <b>Bandwidth:</b>It takes up a limited amount of bandwidth to download for the user of your website.</li>
+        <li>
+            <b>Slow down:</b> It additionally (when utilized) slows down the operation of certain tasks - one could/can contend that a few tasks are done quick and reliable in jQuery related with a native plain javascript execution.</li>
+        <li>
+            <b>Better alternatives: </b> There are numerous different frameworks out there, that don't require jQuery and in case you're as of now utilizing one of these, including jQuery may be an anti-pattern or simply including additional complexity that wasn't required.</li>
+    </ul>
+    </div>
+
+    <h2 id="usages">Usages</h2>
+    <div style="margin-left: 10px;">
+    <ul>
+        <li>JQuery can be utilized to create Ajax based applications.</li>
+
+        <li>It can be utilized very well to make code basic, concise, and reusable.</li>
+
+        <li>It simplifies the procedure of traversal of the HTML DOM tree.</li>
+
+        <li>It can likewise deal with handling events, animation, and include ajax support in web applications.</li>
+    </ul>
+    </div>
+
+    <h2 id="code">Code Examples</h2>
+    <div>
+        <div class="codeExample1">
+            <b>CDN</b><br/>
+            <p>There are two basic ways to access jQuery: First is by downloading the jQuery as a .js file and then access it directly from the local machine. The other way is to use Content Delivery Network(CDN) i.e. using jQuery with the online link to the official jQuery website.<br>The adjacent image shows the method to use jQuery CDN in a html page by linking the jQuery minified version using a script tag.
+            </p>
+        </div>
+
+        <div class="codeExample2 codeImage">
+            <img class="responsive" src="images/jqueryexample1.png">
+        </div>
+    </div>
+
+
+    <h3>Program 1:<small>Background Change</small></h3>
+    <div class="flex-container">
+        <div class="column">
+            <img class="responsive" src="images/program1.PNG">
+        </div>
+
+        <div class="column"> 
+            <div id="example1Container">
+                <button id="btnBackground">Click me to change background</button>
+            </div>
+                <button id="Explanation1" class="explainBtn">Show Explanation</button>
+            <div id="CodeExplanation1" class="programExplanation">
+                        This code example uses the click action of jQuery to change the background
+                        color of the div (with id example1Container). In the code, three random numbers are created in the range 1-255 to represent red, green and blue colors and then these numbers are used to in the click action to change the background color to a random background. For this particular program, rgb (red, green, blue) function from css has been used.
+                    </div>  
+        </div> 
+    </div>
+
+    <h3>Program 2: <small>Append Nodes</small></h3>
+     <div class="flex-container">
+        <div class="column">
+            <img class="responsive" src="images/program2.PNG">
+        </div>
+
+        <div class="column"> 
+            <div id="example2Container">
+                <button id="appendbtn">Add Element</button>
+                <button id="removebtn">Remove Element</button>
+            </div>
+            <button id="Explanation2" class="explainBtn">Show Explanation</button>
+            <div id="CodeExplanation2" class="programExplanation">
+                        This program uses append action to add h5 tags in the div with id 'example4Container'. When the Add button with id 'appendbtn' is clicked we append a node h5 tag with class 'ex4' to the parent div (id is example2Container).
+                        The Remove Element button with id 'removebtn' uses the remove action to remove the elements added by the add element button. When the Remove element button is clicked it removes the first element of class 'ex4' (selector is ".ex4":nth(0)).
+                    </div>  
+        </div> 
+    </div>
+
+    <h3>Program 3: <small>Toggle Image</small></h3>
+     <div class="flex-container">
+        <div class="column">
+            <img class="responsive" src="images/program3.PNG">
+        </div>
+
+        <div class="column"> 
+            <div id="example3Container">
+                <button id="btnToggleImage">Toggle Image</button>
+                <img id="imgToggleImage" src="images/MoneyHeist.jpg">
+            </div>
+            <button id="Explanation3" class="explainBtn">Show Explanation</button>
+            <div id="CodeExplanation3" class="programExplanation">
+                        This program uses append action to add h5 tags in the div with id 'example4Container'. When the Add button with id 'appendbtn' is clicked we append a node h5 tag with class 'ex4' to the parent div (id is example2Container).
+                        The Remove Element button with id 'removebtn' uses the remove action to remove the elements added by the add element button. When the Remove element button is clicked it removes the first element of class 'ex4' (selector is ".ex4":nth(0)).
+                    </div>  
+        </div> 
+    </div>
+ 
+ </div>
+                   <div>
+                        <a href="#top">Back to Top</a>
+                    </div>
+
+</section>
+</main>
+<footer>
+        <p>&copy;2020 Designed By Mihir and Dharam</p>
+</footer>   
+</body>
+</html>
